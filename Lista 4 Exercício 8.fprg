@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-18 01:30:10 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjI2OjIyICI7Mjk2OA=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjMzOjIzICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yMTsiMDE6MTM6NTkgIjtMaXN0YSAzIEV4ZXJjw61jaW8gNC5mcHJnOzgzOTg="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjAxOjA1OjU5ICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yMTsiMDE6MTM6NTkgIjtMaXN0YSAzIEV4ZXJjw61jaW8gNS5mcHJnOzg0MDU="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjAxOjA5OjAzICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yMTsiMDE6MTM6NTkgIjtMaXN0YSAzIEV4ZXJjw61jaW8gNi5mcHJnOzgzOTk="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjAxOjExOjE5ICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yMjsiMDg6MjM6MzQgIjtMaXN0YSAzIEV4ZXJjw61jaW8gNy5mcHJnOzg0MDI="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjAxOjMwOjEwICI7NzszMDcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="8.&#9;Calcular e exibir a soma dos n&#250;meros pares menores que 100, inclusive."/>
+            <declare name="c, soma" type="Integer" array="False" size=""/>
+            <assign variable="soma" expression="0"/>
+            <for variable="c" start="0" end="100" direction="inc" step="1">
+                <if expression="c mod 2 = 0">
+                    <then>
+                        <assign variable="soma" expression="soma + c"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

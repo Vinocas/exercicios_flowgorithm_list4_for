@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-18 10:27:29 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEwOjEzOjIxICI7Mjk2MQ=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEwOjI3OjI5ICI7MjszMDgz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="10.&#9;Fa&#231;a um algoritmo para: &#13;&#10;Calcular e exibir o valor da express&#227;o: &#13;&#10;y = (x+1) + (x+2) + (x+3) + (x+4) + (x+5) + &#8230; (x+100) onde x &#233; um n&#250;mero inteiro digitado pelo usu&#225;rio.&#13;&#10;"/>
+            <declare name="c, x, soma, total" type="Integer" array="False" size=""/>
+            <assign variable="soma" expression="0"/>
+            <assign variable="total" expression="0"/>
+            <output expression="&quot;Insira x: &quot;" newline="True"/>
+            <input variable="x"/>
+            <for variable="c" start="1" end="99" direction="inc" step="1">
+                <output expression="&quot; (&quot; &amp; x &amp; &quot; + &quot; &amp; c &amp; &quot;) |&quot;" newline="False"/>
+                <assign variable="soma" expression="x + c"/>
+                <assign variable="total" expression="soma + total"/>
+            </for>
+            <output expression="&quot; (&quot; &amp; x &amp; &quot; + &quot; &amp; c &amp; &quot;) &quot;" newline="False"/>
+            <output expression="&quot;| y: &quot; &amp; total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

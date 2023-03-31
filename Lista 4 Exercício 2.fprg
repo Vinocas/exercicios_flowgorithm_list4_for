@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-18 12:29:04 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjI2OjIyICI7Mjk2OA=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjI2OjQxICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yMTsiMTI6NTI6MjQgIjtMaXN0YSAzIEV4ZXJjw61jaW8gMS5mcHJnOzgzOTQ="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjI4OjA0ICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yMTsiMDE6MTM6NTkgIjtMaXN0YSAzIEV4ZXJjw61jaW8gMi5mcHJnOzgzOTk="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjI5OjA0ICI7MjszMDgw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="2.&#9;Exibir a seguinte s&#233;rie: 1, 3, 5, 7, ..., 99"/>
+            <declare name="serie" type="Integer" array="False" size=""/>
+            <assign variable="serie" expression="1"/>
+            <output expression="serie" newline="True"/>
+            <for variable="serie" start="1" end="99" direction="inc" step="1">
+                <assign variable="serie" expression="serie + 1"/>
+                <if expression="serie mod 2 = 0">
+                    <then>
+                        <assign variable="serie" expression="serie + 1"/>
+                    </then>
+                    <else/>
+                </if>
+                <output expression="serie" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-18 12:08:46 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjI2OjIyICI7Mjk2OA=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjAzOjE4OjU2ICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yODsiMDc6MzY6MTggIjtMaXN0YSAzIEV4ZXJjw61jaW8gMTQuZnByZzs4NDY5"/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjAyOjM3ICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yODsiMDg6NDY6MjIgIjtMaXN0YSAzIEV4ZXJjw61jaW8gMTUuZnByZzs4NDU5"/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjA1OjUwICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yODsiMDc6Mzk6NDkgIjtMaXN0YSAzIEV4ZXJjw61jaW8gMTYtYS5mcHJnOzg2MTA="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjA4OjIyICI7MztVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yODsiMDc6Mzk6NDkgIjtMaXN0YSAzIEV4ZXJjw61jaW8gMTYtYi5mcHJnOzg2MTU="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjA4OjQ2ICI7MTQ7MzEzNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="16.&#9;Somat&#243;rio: Construa os algoritmos que calculem os seguintes somat&#243;rios:&#13;&#10;a.&#9;  &#13;&#10;b.&#9; "/>
+            <declare name="c, soma, n" type="Integer" array="False" size=""/>
+            <assign variable="soma" expression="0"/>
+            <output expression="&quot;Digite o valor de n:&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="c" start="1" end="n" direction="inc" step="1">
+                <assign variable="soma" expression="soma + c"/>
+            </for>
+            <output expression="&quot;O valor de K &#233;: &quot; &amp; soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

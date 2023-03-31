@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-18 12:27:43 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjI2OjIyICI7Mjk2OA=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjI2OjQxICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yMTsiMTI6NTI6MjQgIjtMaXN0YSAzIEV4ZXJjw61jaW8gMS5mcHJnOzgzOTQ="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjI3OjQzICI7MTszMDgw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="1.&#9;Exibir a seguinte s&#233;rie: 1, 2, 3, ...,50"/>
+            <declare name="serie" type="Real" array="False" size=""/>
+            <assign variable="serie" expression="1"/>
+            <output expression="serie" newline="True"/>
+            <for variable="serie" start="1" end="50" direction="inc" step="1">
+                <output expression="serie" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

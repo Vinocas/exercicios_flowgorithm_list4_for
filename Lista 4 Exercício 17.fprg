@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-18 12:11:34 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjI2OjIyICI7Mjk2OA=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjAyOjM3ICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yODsiMDg6NDY6MjIgIjtMaXN0YSAzIEV4ZXJjw61jaW8gMTUuZnByZzs4NDU5"/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjA1OjUwICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yODsiMDc6Mzk6NDkgIjtMaXN0YSAzIEV4ZXJjw61jaW8gMTYtYS5mcHJnOzg2MTA="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjA4OjIyICI7MztVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yODsiMDc6Mzk6NDkgIjtMaXN0YSAzIEV4ZXJjw61jaW8gMTYtYi5mcHJnOzg2MTU="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjEwOjE1ICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yODsiMDg6MDc6NDAgIjtMaXN0YSAzIEV4ZXJjw61jaW8gMTcuZnByZzs4NDUz"/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjExOjM0ICI7MTY7MzEyNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="17.&#9;Tabela: Exibir as seguintes s&#233;ries 1, 2, 3, 4, 5 e 1, 2, 3  no formato de tabela.&#13;&#10;1  1       1  2       1  3       1  4       1  5&#13;&#10;2  1       2  2       2  3       2  4       2  5&#13;&#10;3  1       3  2       3  3       3  4       3  5&#13;&#10;"/>
+            <declare name="lin, col" type="Integer" array="False" size=""/>
+            <for variable="lin" start="1" end="3" direction="inc" step="1">
+                <for variable="col" start="1" end="5" direction="inc" step="1">
+                    <output expression="lin &amp; col &amp; &quot; &quot;" newline="False"/>
+                </for>
+                <output expression="tochar(13)" newline="False"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

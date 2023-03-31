@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-18 01:25:27 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjI2OjIyICI7Mjk2OA=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjMzOjIzICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yMTsiMDE6MTM6NTkgIjtMaXN0YSAzIEV4ZXJjw61jaW8gNC5mcHJnOzgzOTg="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjAxOjA1OjU5ICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yMTsiMDE6MTM6NTkgIjtMaXN0YSAzIEV4ZXJjw61jaW8gNS5mcHJnOzg0MDU="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjAxOjA5OjAzICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yMTsiMDE6MTM6NTkgIjtMaXN0YSAzIEV4ZXJjw61jaW8gNi5mcHJnOzgzOTk="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjAxOjExOjE5ICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yMjsiMDg6MjM6MzQgIjtMaXN0YSAzIEV4ZXJjw61jaW8gNy5mcHJnOzg0MDI="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjAxOjI1OjI3ICI7NjszMDgz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="7.&#9;Calcular e exibir a quantidade de n&#250;meros pares compreendidos entre M e N, inclusive."/>
+            <declare name="m, n, c" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="0"/>
+            <output expression="&quot;Insira o valor de M:&quot;" newline="True"/>
+            <input variable="m"/>
+            <output expression="&quot;Insira o valor de N: &quot;" newline="True"/>
+            <input variable="n"/>
+            <if expression="m == n">
+                <then>
+                    <output expression="&quot;O valor das vari&#225;veis n&#227;o pode ser igual!&quot;" newline="True"/>
+                    <output expression="&quot;Insira novamente o valor de M:&quot;" newline="True"/>
+                    <input variable="m"/>
+                    <output expression="&quot;Insira novamente o valor de N:&quot;" newline="True"/>
+                    <input variable="n"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="m &lt; n">
+                <then>
+                    <for variable="m" start="m" end="n" direction="inc" step="1">
+                        <if expression="m mod 2 = 0">
+                            <then>
+                                <assign variable="c" expression="c + 1"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                    <output expression="c" newline="True"/>
+                </then>
+                <else>
+                    <for variable="m" start="m" end="n" direction="dec" step="1">
+                        <if expression="m mod 2 = 0">
+                            <then>
+                                <assign variable="c" expression="c + 1"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                    <output expression="c" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

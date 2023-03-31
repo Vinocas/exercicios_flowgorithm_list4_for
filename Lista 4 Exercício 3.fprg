@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-18 12:32:58 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjI2OjIyICI7Mjk2OA=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjI2OjQxICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yMTsiMTI6NTI6MjQgIjtMaXN0YSAzIEV4ZXJjw61jaW8gMS5mcHJnOzgzOTQ="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjI4OjA0ICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yMTsiMDE6MTM6NTkgIjtMaXN0YSAzIEV4ZXJjw61jaW8gMi5mcHJnOzgzOTk="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjI5OjI4ICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yMTsiMDE6MTM6NTkgIjtMaXN0YSAzIEV4ZXJjw61jaW8gMy5mcHJnOzg0MDc="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjMyOjU4ICI7MzszMDg0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="3.&#9;Exibir a seguinte s&#233;rie: 1, 2, 3, ..., N"/>
+            <declare name="serie, n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Insira o valor N&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="serie" start="1" end="n" direction="inc" step="1">
+                <output expression="serie" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

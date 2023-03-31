@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-18 03:13:17 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjI2OjIyICI7Mjk2OA=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjAxOjA5OjAzICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yMTsiMDE6MTM6NTkgIjtMaXN0YSAzIEV4ZXJjw61jaW8gNi5mcHJnOzgzOTk="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjAxOjExOjE5ICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yMjsiMDg6MjM6MzQgIjtMaXN0YSAzIEV4ZXJjw61jaW8gNy5mcHJnOzg0MDI="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjAxOjU2OjUxICI7NTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yMjsiMDk6MDE6NTUgIjtMaXN0YSAzIEV4ZXJjw61jaW8gOS5mcHJnOzg0MTM="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjAyOjM3OjI0ICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yODsiMDc6MTM6NDggIjtMaXN0YSAzIEV4ZXJjw61jaW8gMTAuZnByZzs4NDU4"/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjAzOjEzOjE3ICI7MTA7MzEyNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="12.&#9;Exibir os n primeiros termos da sequ&#234;ncia 1, 1, 2, 3, 5, 8, 13, 21, 34, &#8230;, onde n &#233; um n&#250;mero inteiro digitado pelo usu&#225;rio. "/>
+            <declare name="c, seq1, seq2, n, t" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="seq1" expression="0"/>
+            <assign variable="seq2" expression="1"/>
+            <for variable="c" start="1" end="n" direction="inc" step="1">
+                <output expression="seq2" newline="True"/>
+                <assign variable="t" expression="seq2"/>
+                <assign variable="seq2" expression="seq1 + seq2"/>
+                <assign variable="seq1" expression="t"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

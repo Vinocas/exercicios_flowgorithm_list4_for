@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-18 02:35:34 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjI2OjIyICI7Mjk2OA=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjAxOjA1OjU5ICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yMTsiMDE6MTM6NTkgIjtMaXN0YSAzIEV4ZXJjw61jaW8gNS5mcHJnOzg0MDU="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjAxOjA5OjAzICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yMTsiMDE6MTM6NTkgIjtMaXN0YSAzIEV4ZXJjw61jaW8gNi5mcHJnOzgzOTk="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjAxOjExOjE5ICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yMjsiMDg6MjM6MzQgIjtMaXN0YSAzIEV4ZXJjw61jaW8gNy5mcHJnOzg0MDI="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjAxOjU2OjUxICI7NTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yMjsiMDk6MDE6NTUgIjtMaXN0YSAzIEV4ZXJjw61jaW8gOS5mcHJnOzg0MTM="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjAyOjM1OjM0ICI7ODszMDg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="9.&#9;Calcular e exibir o resultado obtido por um n&#250;mero inteiro A elevado a um expoente inteiro B onde A e B s&#227;o n&#250;meros digitados pelo usu&#225;rio. &#13;&#10;Observa&#231;&#227;o: N&#227;o utilize A**B ou A&#710;B.&#13;&#10;"/>
+            <declare name="a, b, aresultado, c" type="Integer" array="False" size=""/>
+            <output expression="&quot;Insira o valor de A:&quot;" newline="True"/>
+            <input variable="a"/>
+            <assign variable="aresultado" expression="a"/>
+            <output expression="&quot;Insira o valor de B:&quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="b = 1">
+                <then>
+                    <output expression="a" newline="True"/>
+                </then>
+                <else>
+                    <for variable="c" start="2" end="b" direction="inc" step="1">
+                        <assign variable="aresultado" expression="a * aresultado"/>
+                    </for>
+                    <output expression="aresultado" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

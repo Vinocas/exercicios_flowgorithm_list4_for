@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-18 10:17:49 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEwOjEzOjIxICI7Mjk2MQ=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEwOjE3OjQ5ICI7MTszMDgz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="4.&#9;Calcular e exibir a seguinte s&#233;rie: 1 + 2 + 3 +...+ 50. "/>
+            <declare name="c, soma" type="Integer" array="False" size=""/>
+            <assign variable="soma" expression="0"/>
+            <for variable="c" start="1" end="49" direction="inc" step="1">
+                <output expression="c &amp; &quot; + &quot;" newline="False"/>
+                <assign variable="soma" expression="soma + c"/>
+            </for>
+            <output expression="c" newline="True"/>
+            <output expression="&quot;Somat&#243;ria da s&#233;rie: &quot; &amp; soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

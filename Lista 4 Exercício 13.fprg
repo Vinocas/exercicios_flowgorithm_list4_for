@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-18 10:34:13 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEwOjEzOjIxICI7Mjk2MQ=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEwOjM0OjEzICI7NDszMDc2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="13.&#9;Calcular e exibir o valor da express&#227;o y = 1*x+2*x+3*x+4*x+5*x+&#8230;+20*x, onde x &#233; um n&#250;mero inteiro digitado pelo usu&#225;rio."/>
+            <declare name="x, c, soma" type="Integer" array="False" size=""/>
+            <declare name="produto" type="Real" array="False" size=""/>
+            <assign variable="produto" expression="1"/>
+            <assign variable="soma" expression="0"/>
+            <output expression="&quot;Insira x: &quot;" newline="True"/>
+            <input variable="x"/>
+            <for variable="c" start="1" end="20" direction="inc" step="1">
+                <assign variable="produto" expression="x * c"/>
+                <output expression="x &amp; &quot; * &quot; &amp; c &amp; &quot; = &quot; &amp; produto" newline="True"/>
+                <assign variable="soma" expression="soma + produto"/>
+            </for>
+            <output expression="&quot;Somat&#243;ria de y = &quot; &amp; soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

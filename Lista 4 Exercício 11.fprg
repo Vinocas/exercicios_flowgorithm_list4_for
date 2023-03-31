@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-18 03:08:14 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjI2OjIyICI7Mjk2OA=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjAxOjA5OjAzICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yMTsiMDE6MTM6NTkgIjtMaXN0YSAzIEV4ZXJjw61jaW8gNi5mcHJnOzgzOTk="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjAxOjExOjE5ICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yMjsiMDg6MjM6MzQgIjtMaXN0YSAzIEV4ZXJjw61jaW8gNy5mcHJnOzg0MDI="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjAxOjU2OjUxICI7NTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yMjsiMDk6MDE6NTUgIjtMaXN0YSAzIEV4ZXJjw61jaW8gOS5mcHJnOzg0MTM="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjAyOjM3OjI0ICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yODsiMDc6MTM6NDggIjtMaXN0YSAzIEV4ZXJjw61jaW8gMTAuZnByZzs4NDU4"/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjAzOjA4OjE0ICI7OTszMDg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="11.&#9;Exibir os 20 primeiros n&#250;meros da sequ&#234;ncia 3, 9, 27, 81, ...  &#13;&#10;Em seguida, altere o algoritmo para calcular e exibir a soma dos n&#250;meros contidos nessa sequ&#234;ncia.&#13;&#10;"/>
+            <declare name="c, seq, soma" type="Real" array="False" size=""/>
+            <assign variable="seq" expression="3"/>
+            <assign variable="soma" expression="0"/>
+            <for variable="c" start="1" end="20" direction="inc" step="1">
+                <output expression="seq" newline="True"/>
+                <assign variable="soma" expression="soma + seq"/>
+                <assign variable="seq" expression="seq * 3"/>
+            </for>
+            <output expression="&quot;A soma dos 20 primeiros n&#250;meros da sequ&#234;ncia 3, 9, 27, 81, ... &#233;:&quot; &amp; soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

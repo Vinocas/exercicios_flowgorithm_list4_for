@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-18 12:04:41 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjI2OjIyICI7Mjk2OA=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjAxOjU2OjUxICI7NTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yMjsiMDk6MDE6NTUgIjtMaXN0YSAzIEV4ZXJjw61jaW8gOS5mcHJnOzg0MTM="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjAyOjM3OjI0ICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yODsiMDc6MTM6NDggIjtMaXN0YSAzIEV4ZXJjw61jaW8gMTAuZnByZzs4NDU4"/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjAzOjE4OjU2ICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yODsiMDc6MzY6MTggIjtMaXN0YSAzIEV4ZXJjw61jaW8gMTQuZnByZzs4NDY5"/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjAyOjM3ICI7MTtVc3XDoXJpbztWSU5JQ0lVU0RFTEw7MjAyMi0wMy0yODsiMDg6NDY6MjIgIjtMaXN0YSAzIEV4ZXJjw61jaW8gMTUuZnByZzs4NDU5"/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDQtMTg7IjEyOjA0OjQxICI7MTE7MzEyMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="15.&#9;Construa um algoritmo que verifique se um dado n&#250;mero inteiro &#233; primo."/>
+            <declare name="n, c, qd" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="qd" expression="0"/>
+            <if expression="n &gt; 1">
+                <then>
+                    <for variable="c" start="1" end="n" direction="inc" step="1">
+                        <if expression="n mod c = 0">
+                            <then>
+                                <assign variable="qd" expression="qd + 1"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                    <if expression="qd = 2">
+                        <then>
+                            <output expression="&quot;Esse n&#250;mero &#233; primo&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Esse n&#250;mero n&#227;o &#233; primo&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Esse n&#250;mero &#233; primo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
